@@ -6,14 +6,14 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0,
       maximum-scale=1.0, minimum-scale=1.0"
-      />
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bookshelf Apps</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
-      />
+    />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
@@ -34,14 +34,20 @@
           </div>
           <div class="input">
             <label for="inputBookYear">Tahun</label>
-            <input id="inputBookYear" type="number" min="1900" max="2099"
-              value="1900" required />
+            <input
+              id="inputBookYear"
+              type="number"
+              min="1900"
+              max="2099"
+              value="1900"
+              required
+            />
           </div>
           <div class="input-inline">
             <label for="inputBookIsComplete">Selesai dibaca</label>
             <input id="inputBookIsComplete" type="checkbox" />
           </div>
-          <button id="bookSubmit" type="submit">
+          <button id="bookSubmit" type="submit" class="btn-submit">
             Masukkan Buku ke rak <span>Belum selesai dibaca</span>
           </button>
         </form>
@@ -50,12 +56,13 @@
       <section class="search">
         <h2>Cari Buku (Opsional)</h2>
         <form id="searchBook">
-          <label for="searchBookTitle">Judul</label>
-          <input id="searchBookTitle" type="text" />
-          <button id="searchSubmit" type="submit">Cari</button>
+          <div class="input">
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text" />
+            <button id="searchSubmit" type="submit">Cari</button>
+          </div>
         </form>
       </section>
-
 
       <section>
         <div class="container">

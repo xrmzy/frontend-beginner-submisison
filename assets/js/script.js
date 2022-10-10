@@ -136,18 +136,14 @@ function findBook(bookId) {
 
 function removeBook(bookId) {
   const bookTarget = findBookIndex(bookId);
-
   if (bookTarget === -1) return;
-
   books.splice(bookTarget, 1);
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
 function undoBook(bookId) {
   const bookTarget = findBook(bookId);
-
   if (bookTarget == null) return;
-
   bookTarget.isCompleted = false;
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
